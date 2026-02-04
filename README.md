@@ -67,22 +67,6 @@ When started, the extension will automatically connect to the active tab and beg
 ## Use Disclaimer
 I do not condone or recommend the use of this extension for malicious or academic purposes. You are responsible for appropriately using this extension, and you are accountable for any possible consequences that may arise from personal use of this extenion.
 
-## Installation (for demonstration only)
-
-1. Download the "HumanAutoTyper" folder from this GitHub Page
-2. Go to:
-   - `chrome://extensions` or `edge://extensions`
-3. Enable Developer Mode
-4. Click **Load unpacked**
-5. Select the extension folder that contains:
-   - `manifest.json`
-   - `background.js`
-   - `sidepanel.html`
-   - `sidepanel.js`
-   - `sidepanel.css`
-   
-Now whenever you want to use the extension, right-click it and select "Open in Sidebar". It will not open if you click the icon.
-
 
 ## Final note
 
