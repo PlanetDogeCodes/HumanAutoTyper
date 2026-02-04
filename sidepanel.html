@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Human Typer</title>
+    <link rel="stylesheet" href="sidepanel.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Human Typer</h1>
+      <div class="sub">
+        Click where you want the cursor in Google Docs, then Start.
+        Pause will take effect at the next word boundary.
+      </div>
+    </header>
+
+    <section class="card">
+      <label for="text">Text to type</label>
+      <textarea id="text" placeholder="Paste the text you want to type..."></textarea>
+      <div class="note">Tip: Click into the doc first to set the insertion point.</div>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <label>WPM</label>
+        <div class="val"><span id="wpmVal">60</span></div>
+      </div>
+      <input id="wpm" type="range" min="5" max="200" value="60" />
+
+      <div class="row">
+        <label>WPM Fluctuation (±)</label>
+        <div class="val"><span id="fluctVal">15</span></div>
+      </div>
+      <input id="fluct" type="range" min="0" max="120" value="15" />
+
+      <div class="row">
+        <label>Typo Chance (%)</label>
+        <div class="val"><span id="typoVal">8</span></div>
+      </div>
+      <input id="typo" type="range" min="0" max="40" value="8" />
+
+      <div class="row">
+        <label>Max Random Pause (seconds)</label>
+        <div class="val"><span id="pauseVal">1.5</span></div>
+      </div>
+      <input id="maxPause" type="range" min="0" max="5" step="0.1" value="1.5" />
+
+      <div class="toggles">
+        <label class="toggle" title="Adds common, human mistakes: speed variation, pauses, and typos that get corrected.">
+          <input id="badMode" type="checkbox" checked />
+          Human mistakes mode
+        </label>
+
+        <label class="toggle" title="A steady, clean example (no typos, minimal pauses).">
+          <input id="perfectMode" type="checkbox" />
+          Model typing mode
+        </label>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="btnRow">
+        <button id="attachBtn">Attach</button>
+        <button id="detachBtn">Detach</button>
+      </div>
+
+      <div class="btnRow">
+        <button class="primary" id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button class="danger" id="stopBtn">Stop</button>
+      </div>
+
+      <div class="status" id="status">Status: <strong>Idle</strong></div>
+      <div class="tiny">
+        Start will auto-attach to browser window if needed. Ignore the debugging prompt, debug mode is needed to type while you are out-of-tab.
+      </div>
+    </section>
+
+    <script src="sidepanel.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "Human Typer",
+  "description": "Human Typer: Demonstrate realistic typing with optional mistakes, pauses, and speed variation. Works in Google Docs by dispatching key events.",
+  "version": "1.3.0",
+  "manifest_version": 3,
+
+  "permissions": [
+    "sidePanel",
+    "activeTab",
+    "tabs",
+    "scripting",
+    "debugger"
+  ],
+  "host_permissions": [
+    "https://docs.google.com/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+
+  "action": {
+    "default_title": "Human Typer"
+  }
+}
