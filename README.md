@@ -25,7 +25,7 @@ Human Typer is designed to do the opposite. Instead of typing in a consistent ma
 - introduce errors
 - wait between actions
 - behave irregularly
-This is all so that it can evade detection by writing plugins such as Brisk for Teachers.
+This is all so that it can evade detection by writing plugins such as GPT-Zero and RevisionHistory.
 
 ## Features and Tools
 
